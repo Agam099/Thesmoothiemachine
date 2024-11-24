@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Smoothie Creator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🍹 Build Your Smoothie</h1>
+    <p>Mix and match your favorite ingredients to create a delicious smoothie!</p>
+  </header>
+
+  <main>
+    <form id="smoothie-form">
+      <label for="customer-name">Your Name:</label>
+      <input type="text" id="customer-name" name="customer-name" required>
+
+      <label for="base">Select your base:</label>
+      <select id="base" name="base">
+        <option value="Coconut Water">Coconut Water</option>
+        <option value="Oat Milk">Oat Milk</option>
+        <option value="Soy Milk">Soy Milk</option>
+      </select>
+
+      <fieldset>
+        <legend>Pick your fruits:</legend>
+        <label><input type="checkbox" name="fruits" value="Mango"> Mango</label>
+        <label><input type="checkbox" name="fruits" value="Pineapple"> Pineapple</label>
+        <label><input type="checkbox" name="fruits" value="Peach"> Peach</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sweeteners:</legend>
+        <label><input type="radio" name="sweetener" value="Agave Syrup" required> Agave Syrup</label>
+        <label><input type="radio" name="sweetener" value="Maple Syrup"> Maple Syrup</label>
+        <label><input type="radio" name="sweetener" value="None"> None</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Add-ons:</legend>
+        <label><input type="checkbox" name="addons" value="Flax Seeds"> Flax Seeds</label>
+        <label><input type="checkbox" name="addons" value="Coconut Flakes"> Coconut Flakes</label>
+        <label><input type="checkbox" name="addons" value="Spirulina"> Spirulina</label>
+      </fieldset>
+
+      <label for="size">Smoothie size:</label>
+      <select id="size" name="size">
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+      </select>
+
+      <button type="button" id="order-button">Create Smoothie</button>
+    </form>
+
+    <div id="order-summary"></div>
+  </main>
+
+  <footer>
+    <p>🥭 Fresh Ingredients, Endless Combinations 🍍</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
